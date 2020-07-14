@@ -1,0 +1,9 @@
+
+# Informacion sensible
+
+# Cache
+
+
+# Archivos basura
+*.trs
+*.tmp
