@@ -27,7 +27,7 @@ __Asesor:__ Juan Carlos Pizano Andrade
 
 #### Datos imporantes
  - El __informa de Brundtland__ (de 1987) propone que el desarrollo sustentable es el punto de equilibrio entre los intereses sociales, económicos y mediambientales. Además fué el primer artículo en poner en el foco internacinoal al _desarrollo sustentable_.
-<img src="/assets/sustentabilidad.png" alt="Aportación Brundtland" width="350"/>
+<img src="./assets/sustentabilidad.png" alt="Aportación Brundtland" width="350"/>
 
  - La __idea de sustentabilidad__ surge con la comprensión de que el desarrollo de la sociedad debe estar _centrado en el hombre_ y no en los indices económicos
  
