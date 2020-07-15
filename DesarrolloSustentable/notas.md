@@ -38,8 +38,8 @@ __Asesor:__ Juan Carlos Pizano Andrade
 
 ### Reto 1
 
-[archivo](/Rivera_Benjamin_R1_U1.ods) \
-[entregable](/Rivera_Benjamin_R1_U1.pdf)
+[archivo](./Rivera_Benjamin_R1_U1.ods) \
+[entregable](./Rivera_Benjamin_R1_U1.pdf)
 
 
 ### Lección 2
@@ -274,11 +274,11 @@ El __modelo de la ECDE__ únicamente ayuda a comparar paises entre si, no a medi
 
 1. Metodologías,Indicadores e índices con la evaluación de la sustentabilidad. 
 
-<img src="/assets/Mapa_indicadores_indices.png" alt="Metodologías,Indicadores e índices con la evaluación de la sustentabilidad" width="350">
+<img src="./assets/Mapa_indicadores_indices.png" alt="Metodologías,Indicadores e índices con la evaluación de la sustentabilidad" width="350">
 
 2. Modelos de medición de la sustentabilidad.
 
-<img src="/assets/Mapa_medición_sustentabilidad.png" alt="Modelos de medición de la sustentabilidad" width="350">
+<img src="./assets/Mapa_medición_sustentabilidad.png" alt="Modelos de medición de la sustentabilidad" width="350">
 
 #### Fuentes de información
 
