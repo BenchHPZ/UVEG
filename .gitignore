@@ -1,9 +1,7 @@
+.gitignore
 
-# Informacion sensible
+# Archivos sensibles
 
-# Cache
-
-
-# Archivos basura
-*.trs
+# Archivos temporales
 *.tmp
+*.trs
