@@ -289,4 +289,116 @@ El __modelo de la ECDE__ únicamente ayuda a comparar paises entre si, no a medi
 
 ## Unidad 2. Tópicos de debate sobre desarrollo sustentable.
 
+| Retos | Lecciones | Ponderación |
+|---|---|---:|
+|  |L8. Naturaleza, medio ambiente y sociedad |  |
+|  |L9. Economía, mercado y pobreza |  |
+|R4. Tópicos implicados en el desarrollo sustentable |  |15% |
+|  |L10. Política y democracia para alcanzar la sustentabilidad |  |
+|  |L11. Ética y sustentabilidad |  |
+|  |L12. El futuro y la sustentabilidad |  |
+|  |Autoealuación |5% |
+|R5. Evaluación de la sustentabilidad en un caso aplicado |  |35% |
+
+
+### Lección 8
+
+Recapitulando, los __problemas ambientales globales__ son
+- Deforestación
+- Contaminación
+- Escasez de agua
+- Energía
+
+y el encontrar maneras de solucionarlos o atenuarlos debe ser un objetivo primordial de todos. De momento hemos sufrido por la __sobreexplotación__ de los recursos, y nuestra poca conciencia al respcto, acelerando los procesos negativos como _la deforestación, la contaminación del mar, el cambio climático_, entre otros. Causando sobreexplotación de _pesquería, agua y hábitats naturales_.
+
+>__Naturaleza__ Al ser un termino muy complejo únicamente nos centraremos en las tres definiciones más reconocidas:
+>	- Conjunto de todo lo que forma el universo, en cuyda creación no ha intervenido el hombre.
+>	- Fuerza cósmica que se supone, rige y ordena todas las cosas creadas.
+>	- El propio mundo material que puede o no incluir a los seres humanos.
+
+> __Medio Ambiente__  Sistema formado por elementos naturales y artificiales que están interrelacionados y que son modificados por la acción humana.
+
+Es importante notar que la __sociedad__ tiene una gran interdependencia con los recursos naturales, al igual que todos los seres vivos del planeta. Por esto es imporante que la sociedad aprenda a administrar los recursos naturales, que _no son exclusivamente_ suyos, es importante que tengamos conciencia de lo que aún podemos hacer por nuestro planeta para cuidar el _medio ambiente_.
+
+La __actividad antropogénica__ es aquella que describe las intervenciones del ser humano en el ambiente. Y por ahora nuestra _relación_ hacia los recursos naturals ha sido de __dependencia, temor de escasez y uso irracional__, debemos de cambiar nuestra conciencia ambiental para poder solucionar esto.
+
+### Lección 9
+
+> __Economía__ Es la ciencia que estudia la manera en que los individuos y las sociedades administran sus recursos.
+
+> __Política fiscal y tributaria__ Son un conjunto de medidas, relativas al régimen tributario local, que reglamentan el actuar correcto económico de una región o gobierno.
+
+> __Mercado__ Espacio físco o virtual donde se desarrollan intercambios y transacciones reglamentadas por la _política fiscal y tributaria_ de la región. Se compone de 
+>	- Consumidores
+>	- Productores
+>	- Revendedores
+>	- Gobierno
+
+En relación a los terminos anterioes aparece la __pobreza__ que, a pesar de su inherente complejidad, se puede clasificar en
+- Pobreza material
+- Pobreza social
+- Pobreza económica
+
+De la relación de los anteriores podemos decir que _la economía nos dice qué producir, cómo y qué, el mercado nos permite recuperar la inversión a través del PIB y con ello erradiicar la pobreza de los pueblos.
+
+
+### Lección 10
+
+> __Política__ Es el arte, doctrina u opinión referente al gobierno de los estados 
+
+La __política publica__, debería, caracterizarse por contar con esquemas de planeación para cada periodo de gobierno, donde se debe buscar alcanzar los objetivos que más nos beneficien como sociedad. Los objetivos antes mencionados siempre deben ser _factibles_ y _organizados_.
+
+En temas de _sustentabilidad_, la __Secertaria de Medio Ambiente y Recursos Naturales (SEMARNAT)__ se encarga de aportar objetivos y planeaciones a la _agenda publica_ que apoyen al _desarrollo sustentable_ del pais. Suelen incluir temas como: Cambio climático, disposición de residuos peligrosos, acceso al agua, energía.
+
+De manera que podemos definir a las __políticas publicas del medio ambiente__ como aquellas _encargadas de contribuir a evitar la destrucción y deterioro del medio ambiente_.
+
+> __Democracia__ Es el sistema político que defiende la soberanía del pueblo y su derecho a elegir y controlar a sus gobernantes.
+
+Según _Cantú MArtínez_, las sociedades democraticas deben de
+- Tener elecciones libres
+- Deben de prevalecer la libertad de expresión
+- Deben existir fuentes alternas de información
+- Debe exitir la libertad de asociación
+- Los funcionarios deben ser escogidos por el pueblo
+- Todos los ciudadanos deben tener los mismo derechos
+
+
+### Lección 11
+
+> __Ética__ 
+>	- Adjetivo recto, conforme a la moral.
+>	- Conjunto de normas morales que rigen la conducta de la persona en cualquier ámbito de la vida.
+
+Esta se divide en dos conceptos:
+- Ética como razón práctica y pura.
+- Ética como interes y valores sociales.
+
+> __Moral__ Adjetivo que concierne al fuero interno o al respeto humano, y no al orden jurídico. 
+```
+La ética es moral
+```
+
+La burocracia y terminos políticos han lelvado a que no siempre la ley coincida con los que es _ética_ y _moralmente_ correcto. En todo trabajo y proyecto se debe tener esto en cuenta y siempre priorizar lo que sea correcto _ética_ y _moralmente_ hablando.
+
+#### Fuentes de información
+
+- S/D. (2007). _NOM-147-SEMARNAT/SSA1-2004_. 15 de julio de 2020, de PROFEPA Sitio web: https://www.profepa.gob.mx/innovaportal/file/1392/1/nom-147-semarnat_ssa1-2004.pdf
+
+
+### Lección 12
+
+Los __seis gases, preocupantes, de efecto inverndero__ son el CO2, CH4, Hidrofluorocarbonos, perfluocarbonos y el hexaflourosulfúrico
+
+
+### Reto 5
+
+[archivo](./Rivera_Benjamin_R5_U2.docx) \
+[entregable](./Rivera_Benjamin_R5_U2.pdf)
+
+#### Fuentes de información
+
+- Edición. (2020). _Supera contaminación de ladrillos a administraciones_. 15 de Julio de 2020, de Perdiodico Correo Sitio web: https://periodicocorreo.com.mx/supera-contaminacion-de-ladrillos-a-administraciones/
+
+- S/D. (2013). _DIAGNÓSTICO INTEGRAL SOBRE EL SECTOR LADRILLERO EN GUANAJUATO Año 2013_. 14 de julio de 2020, de Gobierno del estado de Guanajuato Sitio web: https://www.google.com/url-sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_zsunndLqAhUPXa0KHWbDBx0QFjAAegQIBBAB&url=https%3A%2F%2Ftransparencia.guanajuato.gob.mx%2Fdedalo%2Fmodulos%2Fbajaarchivo.php%3Ftipo%3D1%26archivo%3D29682%2Fanexo_29682.pdf&usg=AOvVaw0XZ2wrn7Dk57jSJCLXzRQP
+
 

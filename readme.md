@@ -16,7 +16,7 @@ Las materias de las que hay material en el respositorio son:
 
 ### Licencia
 
-Por __ética institucional__ queda estrictamente prohibido plagiar el material de este repositorio como para cualquier curso de la _UVEG_, sin embargo, todo el material de mi autoria queda bajo la licencia [![WTFPL][logoWTFPL]][licenciaWTFPL]
+El uso del material de este repositorio, dentro de actividades de la __UVEG__, debe apegarse al _código de_ __ética institucional__ _de la universidad_. Fuera de lo anterior, todo el material de mi autoria queda bajo la licencia [![WTFPL][logoWTFPL]][licenciaWTFPL]
 
 
 ### Autor
