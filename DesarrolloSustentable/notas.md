@@ -27,7 +27,7 @@ __Asesor:__ Juan Carlos Pizano Andrade
 
 #### Datos imporantes
  - El __informa de Brundtland__ (de 1987) propone que el desarrollo sustentable es el punto de equilibrio entre los intereses sociales, económicos y mediambientales. Además fué el primer artículo en poner en el foco internacinoal al _desarrollo sustentable_.
-<img src="./assets/sustentabilidad.png" alt="Aportación Brundtland" width="350"/>
+<img src="./Actividades/assets/sustentabilidad.png" alt="Aportación Brundtland" width="350"/>
 
  - La __idea de sustentabilidad__ surge con la comprensión de que el desarrollo de la sociedad debe estar _centrado en el hombre_ y no en los indices económicos
  
@@ -38,8 +38,8 @@ __Asesor:__ Juan Carlos Pizano Andrade
 
 ### Reto 1
 
-[archivo](./Rivera_Benjamin_R1_U1.ods) \
-[entregable](./Rivera_Benjamin_R1_U1.pdf)
+[archivo](./Actividades/Rivera_Benjamin_R1_U1.ods) \
+[entregable](./Actividades/Rivera_Benjamin_R1_U1.pdf)
 
 
 ### Lección 2
@@ -274,11 +274,11 @@ El __modelo de la ECDE__ únicamente ayuda a comparar paises entre si, no a medi
 
 1. Metodologías,Indicadores e índices con la evaluación de la sustentabilidad. 
 
-<img src="./assets/Mapa_indicadores_indices.png" alt="Metodologías,Indicadores e índices con la evaluación de la sustentabilidad" width="350">
+<img src="./Actividades/assets/Mapa_indicadores_indices.png" alt="Metodologías,Indicadores e índices con la evaluación de la sustentabilidad" width="350">
 
 2. Modelos de medición de la sustentabilidad.
 
-<img src="./assets/Mapa_medición_sustentabilidad.png" alt="Modelos de medición de la sustentabilidad" width="350">
+<img src="./Actividades/assets/Mapa_medición_sustentabilidad.png" alt="Modelos de medición de la sustentabilidad" width="350">
 
 #### Fuentes de información
 
@@ -392,13 +392,12 @@ Los __seis gases, preocupantes, de efecto inverndero__ son el CO2, CH4, Hidroflu
 
 ### Reto 5
 
-[archivo](./Rivera_Benjamin_R5_U2.docx) \
-[entregable](./Rivera_Benjamin_R5_U2.pdf)
+[archivo](./Actividades/Rivera_Benjamin_R5_U2.docx) \
+[entregable](./Actividades/Rivera_Benjamin_R5_U2.pdf)
 
 #### Fuentes de información
 
 - Edición. (2020). _Supera contaminación de ladrillos a administraciones_. 15 de Julio de 2020, de Perdiodico Correo Sitio web: https://periodicocorreo.com.mx/supera-contaminacion-de-ladrillos-a-administraciones/
 
-- S/D. (2013). _DIAGNÓSTICO INTEGRAL SOBRE EL SECTOR LADRILLERO EN GUANAJUATO Año 2013_. 14 de julio de 2020, de Gobierno del estado de Guanajuato Sitio web: https://www.google.com/url-sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_zsunndLqAhUPXa0KHWbDBx0QFjAAegQIBBAB&url=https%3A%2F%2Ftransparencia.guanajuato.gob.mx%2Fdedalo%2Fmodulos%2Fbajaarchivo.php%3Ftipo%3D1%26archivo%3D29682%2Fanexo_29682.pdf&usg=AOvVaw0XZ2wrn7Dk57jSJCLXzRQP
-
+- S/D. (2013). _DIAGNÓSTICO INTEGRAL SOBRE EL SECTOR LADRILLERO EN GUANAJUATO Año 2013_. 14 de julio de 2020, de Gobierno del estado de Guanajuato Sitio web: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjl4N_szNXqAhVEXqwKHWy7ArcQFjAAegQIBRAB&url=https%3A%2F%2Ftransparencia.guanajuato.gob.mx%2Fdedalo%2Fmodulos%2Fbajaarchivo.php%3Ftipo%3D1%26archivo%3D29682%2Fanexo_29682.pdf&usg=AOvVaw0XZ2wrn7Dk57jSJCLXzRQP
 

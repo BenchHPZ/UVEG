@@ -9,7 +9,7 @@ Repositorio para material y cursos cursados en la __Lic en Ingieneria con Sistem
 Las materias de las que hay material en el respositorio son:
  - [x] [Ingles 1](/Ingles1)
  - [x] [Ingles 2](/Ingles2)
- - [ ] [Desarrollo sustentable](/DesarrolloSustentable)
+ - [x] [Desarrollo sustentable](/DesarrolloSustentable)
 
 > Aquellas materias con palomita ya fueron concluidas
 ## Desarrollo
