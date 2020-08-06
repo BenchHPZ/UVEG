@@ -1,5 +1,5 @@
-
 # Taller de bases de datos v2
+
 ___MTBD___
 
 __Periodo:__ Agosto 2020
@@ -127,37 +127,380 @@ Algunos lugares donde se utilizan las bases de datos son:
 | Db2     | <ul><li>Soporta tanto bases relacionales, como las NoSQL</li><li>Corre en Linux, Windows y Unix-like</li><li>Respaldado por IBM</li><li>Facil integración con otros SGDB </li></ul> | <ul><li>No es software libre</li><li>Software de pago por uso</li></ul> | Parece ser un sfotware maravilloso, facilmente escalable y adaptable a distintos lenguajes de programación y adapatativo a la aqruitectura; adempas esta respaldado por una compañia muy importante como IBM. La única desventaja es que es un software privativo, aunque es de esperarse con todas las caracteristicas que tiene |
 | OrientDB| <ul><li>Open Source</li><li>Escrito en Java</li><li>Soporta bases de datos con estructura de grafos, documentos, relacionales y orientada a obejtos</li></ul> | <ul><li>Escrito en Java</li><li>Soporte poco eficiente</li></ul> | Primero que nada, JAVA, yo en lo personal tengo una relación complicada con este lenguaje de programación, lo puse e ventajas porque casi todas las maquinas tiene instalado JAVA, lo que implica portabilidad; por otro lado, Java no me parece el lenguaje más espectacular, pero eso es bastante personal. Además, este SGDB de software libre, como la mayoría de ellos, carece de un buen soporte, esto implica que los bugs tardan ens ser arreglados y no hay certesa de cuando dejara de estar el proyecto en mantenimiento. |
 
-### Fuentes de información
+#### Fuentes de información
 
  - S/D. (2020). _Introducción al sistema gestor de base de datos (SGBD)_. 2 de agosto de 2020, de IONOS Sitio web: <https://www.ionos.mx/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd/>
-
  
-
-
-
-
-
-
-
-
 
 ## Unidad 2.
 
 | Retos | Lecciones | Ponderación |
 |---|---|---:|
 |  |L3. Definir y crear una base de datos | |
-|R2. Crear mi primera base de datos |  | 12%|
+|[R2. Crear mi primera base de datos](./Actividades/Rivera_Benjamin_TBD_R2_U2.sql) |  | 12%|
 |  |L4. Manipular la información de una base de datos | |
 |  |L5. Ordenar y agrupar la información de una base de datos | |
-|R.3 Manipular la información de una base de datos |  | 25%|
+|[R.3 Manipular la información de una base de datos](./Actividades/Rivera_Benjamin_TBD_R3_U2.sql) |  | 25%|
+
+### Lección 3. Definir y crear una base de datos
+
+Dfiniremos a 
+
+> __DDl__ es el lenguaje que se utiliza para modificar la estructura, o esqueleto, donde se almacenará los datos en la base de datos; incluyendo el tipo de datos a guardar
+
+Es importante recordar que todas las sentencias de __DDL__ deben terminar con __;__ y que todas las instrucciones van con mayusculas. Para crear, modificar o eliminar dichas estructuras se utilizan sentencias como:
+ - Crear o modificar
+ 	- `CREATE`
+ - Modificar estructuras existentes
+ 	- `ALTER`
+ - Eliminar estructura de base de datos
+ 	- `DROP`
+ - Eliminar registros y espacioes de resgistros en base de datos
+ 	- `TRUNCATE`
+ - Crear un esquema; que es un coonjunto de tablas
+ 	- `CREATE SCHEMA nombre`
+ 	
+Además, en las bases de datos debemos especificar el tipo de datos a guardar, ejemplis de estos son:
+ - VARCHAR
+ 	- Equivalente a _string_ en otros lados
+ - INT
+ 	- Almacena números enteros
+ - DOUBLE
+ 	- Almacena números decimales
+ 	
+Un ejemplo donde se crea y usa un a tabla podria ser el siguiente
+
+```sql
+ CREATE DATABASE empresa;
+ 
+ USE empresa;
+ 
+ CREATE TABLE sucursal(
+ 	id INT NOT NULL PRIMARY KEY,
+ 	nombre VARCHAR(100) NOT NULL,
+ 	direccion VARCHAR(100) NULL
+ );
+ 
+ CREATE TABLE productos;
+```
+
+si quisieramos eliminar la tabla creada anteriormente usariamos la sentencia
+
+```sql
+ DROP TABLE sucursal;
+```
+
+y para eliminar la base de datos seria
+
+```sql
+ DROP DATABASE empresa;
+```
+
+No es posible cambiar el nombre de una base de datos o talba, actualmente es necesario exportar los datos, eliminar y luego crearala con el nombre deseado, para finalmente importar las tablas exportadas. El _workbench_ de SQL tiene _Wizards_ para realizar estas acciones facilmente.
+
+Sin embargo si es posible agregar o eliminar propiedades especificas de las tablas, como para agregar una propiedad en la tabla se puede usar
+
+```sql
+ ALTER TABLE tabla ADD nueva_propiedad TIPO DE DATO;
+```
+
+y para eliminarla se puede usar
+
+```sql
+ ALTER TABLE tabla DROP COLUMN propiedad_existente;
+```
+
+Recordando el curso de __Fundamentos de Bases de Datos__, el manejo de llaves primarias(__PRIMARY KEY__) nos permite generar relaciones entre tablas, como por ejemplo:
+ - Relación uno a muchos
+ 	- Donde el registro de una tabla se liga a más de una externa y las externas únicamente se ralacionan de regreso
+ - Relación muchos a mcuhos
+ 	- Cuando un registro esta ligado con varios de otra tabla y, además, el registro de otra tabla tiene varios de la inicial.
+ - Relación uno a uno
+ 	- Cuando un registro esta ligado únicamente aalguno de otra tabla, y viceversa.
+ 	
+Para generar estas relaciones entre tablas es necesario agregar restriccinones, estas se concen como `CONSTRAINS`, y estan ligados con `FOREIGN KEY`, que son claves primarias de otras tablas. Para agregar una de estas columnas se podria usar el siguiente codigo
+
+```sql
+ ALTER TABLE tabla ADD CONSTRAINT nombre_restruccion FOREIGN KEY nombre_propiedad_local REFERENCES nombre_tabla_externa(nombre_propiedad_externa);
+```
+ 
+ 	
+#### Caso de practico
+
+Se requiere crear una base de datos para una compañia que vende productos, tiene tres sucursales y planea abrir más. Debe cumplir con
+ - Posibilidad de registrar sucursales por separado
+ - Productos de cada sucursal
+ - Contar con registro de clientes
+ - Forma de pago de cada cliente
+ - Almacenar compras por cliente
+ 
+Para poder solucionar esto podemos crear una base de datos _empresa_, donde crearemos una tabla por cada sucrusal, por producto
+
+```sql
+
+ CREATE DATABASE empresa;
+ 
+ USE empresa;
+ 
+ CREATE TABLE sucursal(
+ 	id INT NOT NULL PRIMARY KEY,
+ 	nombre VARCHAR(100) NOT NULL,
+ 	direccion VARCHAR(100) NULL
+ );
+ 
+ CREATE TABLE product(
+ 	id INT NOt NULL PRIMARY KEY,
+ 	nombre VARCHAR(50) NOT NULL,
+ 	precio DOUBLE NOT NULL,
+ 	descripcion VARCHAR(50) NULL
+ );
+ 
+ ALTER TABLE producto ADD id_sucursal INT NOT NULL;
+```
+### Leccion 4. Manipular informacion de una base de datos
+
+Para hacer manipulación de datos, es necesario utilizar el __DML__ (Lenguaje de Manipulación de Datos), y es el que se encarga de manipular los daatos de una base de datos, las acciones que puede realizar son:
+ - __Agregar__, para agregar un registro a una tabla
+ 	+ `SELECT`
+ - __Editar__, para modificar un registro en una tabla
+ 	+ `UPDATE`
+ - __Eliminar__, para eliminar el registro de una tabla
+ 	+ `DELETE` 
+ - __Consultar__, para obtener los registros de una tabla
+ 	+ `SELECT` 
+
+> Es importante recordar que un __registro__ corresponde a una fila, o renglon, de alguna _Tabla_.
+
+siempre hay que tener en cuenta lo anterior, ya que cuando se quiera agregar un _registro_ a la tabla hay que proporcionar valores para todas las columnas de la tabla. Para insertar un registro en alguna tabla se debe seguir la sintaxis
+```sql
+ INSERT INTO nombre_tabla (campo_a, campo_b, campo_c, ...) VALUES (valor_a, valor_b, valor_c, ...)
+```
+
+De manera similar, para la actualizacion de los registros, se sigue la sintaxis
+```sql
+ UPDATE nombre_tabla SET campo_a=valor_a, campo_b=valor_b, ... WHERE condicion;
+```
+en la sintaxis anterior, no siempre es necesario poner la condicion, sin embargo, es __altamente recomendable__, ya que de no ponerla se actualizarian los valores de todas las entradas. Y por ultimo para _eliminar_ un registro se debe seguir la siguiente sintaxis
+```sql
+ DELETE FROM nombre_tabla WHERE condicion;
+```
+al igual que el caso anterior, la condicion no es necesaria; pero en caso de no ponerla ___todos los datos___ de la tabla seran afectados por la sentencia.
+
+Unicamente fata verificar la consulta, en este caso es bueno utilizar la sintaxis 
+```sql
+ SELECT * FROM nombre_tabla WHERE condicion; 
+```
+en caso de que se quiera obtener todos los campos de la tabla, si solo se quieren obtener algunos, se puede utilizar
+```sql
+ SELECT (campo_a, campo_b, ...) FROM nombre_tabla WHERE condicion;
+```
+;es bueno recurdar que la condicion no es necesaria, pero nos ayuda a filtrar los resultados que realmente queremos.
+
+Por ultimo, para aquellos momentos en los que olvidemos la condicion en un `DELETE` o `UPDATE` existe forma de recuperar los datos, un __backup__; para poder hacerlos y recuperarlos el __Worckbench de MySQL__ pose un _wizard_ para esto, aunque tambien se pueden utilizar con gestores externos de versiones, como __git__.
 
 
-### Lección 3
+#### Caso practico
+
+Entonces, para agregar las tiendas seguiremos con las siguientes instrucciones
+
+```sql
+ INSERT INTO tienda (id, nombre, direccion) VALUES 
+ 	(459, 'Electronic Technologies North', 'Blvd. Lopez Mateos #459');
+ INSERT INTO tienda (id, nombre, direccion) VALUES
+ 	(346, 'Electronic Technologies Central', 'Av Insurgentes #346');
+ INSERT INTO tienda (id, nombre, direccion) VALUES
+ 	(549, 'Electronic Technologies East', 'Blvd. Madero #549');
+```
+y para agregar en productos, se puede usar
+```sql
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (301, 
+  	 'Computadora de escritorio - Todo en Uno',
+  	 15499.00,
+  	 'Todo lo necesario para este regreso a clases',
+  	 549);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (305, 
+  	'Celular ET - 15a',
+  	3599.00,
+  	'Ideal para el trabajo',
+  	549);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (310, 
+  	'Laptop - Quinta generacion',
+  	9099.00,
+  	'Economico pero duradero, simplemente lo mejor del anio',
+  	549);
+```
+luego con las modificaciones solicitadas es necesario usar
+```sql
+ UPDATE productos SET 
+ 	descripcion= 'Todo lo que busca en una computadora de escritorio',
+ 	WHEN id=301;
+
+ UPDATE productos SET
+ 	nombre= 'Celular ET2019 - 19xs',
+ 	descripcion= 'Ideal para el trabajo y la escuela',
+ 	WHEN id= 305;
+
+ UPDATE productos SET
+ 	precio = 9999.00
+ 	WHEN id= 310;
+```
+Por ultimo, la empresa solicito una eliminacion, para poder realizarla una opcion es utilizar la oracion
+```sql
+ DELETE FROM productos WHERE id= 305;
+```
+
+### Leccion 5. Lección 5. Ordenar y agrupar la información de una base de datos.
+
+Y, como ya es costumbre en estas lecciones, es necesario usar un lenguaje especifico para ordenar la informacion, en este caso usamos el __DML__ que ya describimos anteriormente. En esta leccion agregamos la palabra `ORDER BY` que puede ir con las opciones `ASC` ó `DESC` y lleva la sintaxis
+
+```sql
+ SELECT * FROM nombre_tabla ORDER BY campo 'ASC|DSC';
+```
+podemos cambiar `*` por campos especificos y dembemos seleccionar unicamente uno respecto al orden.
+
+Ademas tambien nos podria intersar restringir los registros obtenidos por una busqueda con `SELECT`
+```sql
+ SELECT * FROM nombre_tabla LIMIT numero_registros;
+```
+o si queremos que inicie en alguno registro en especifico se puede usar
+```sql
+ SELECT * FROM nombre_tabla LIMIT (registro_inicial, registro_final);
+```
+
+Los ultimos parametros tambien se pueden suar para la busqueda de datos. Tambien podemos agrupaar los datos recibidos por `SELECT`, para hacer eso se usa la sintaxis
+```sql
+ SELECT * FROM nombre_tabla GROUP BY campo_a, campo_b, ...
+```
+
+se puede cambiar `*` por campos especifcos como `campo_a, campo_b, ...`. Y por ultimo, despues de hacer una llamada a `SELECT`, se puede contar la cantidad de respuestas recibidas mediante `COUNT`, su sintaxis es
+
+```sql
+ SELECT propiedad, COUNT(*) FROM nombre_tabla GROUP BY propiedad;
+```
+
+Otra forma imporante para hacer relaciones entre las tablas se da con las __Uniones__, estas funcionan como las operaciones entre conjuntos en matematicas. Tenemos 
+ - __Inner Join__, comparable con $A \and B$, por lo que tomas las coincidencias en las entradas entre $A$ y $B$. 
+ 	+ Su sintaxis 
+```sql
+ SELECT * FROM nombre_tabla_A INNER JOIN nombre_tabla_B ON condicion;
+```
+ - __Left Join__, hara un _or_ de la segunda tabla contra la primera
+ 	+ Sentencia
+```sql
+ SELECT * FROM nombre_tabla_A LEFT JOIN nombre_tabla_B ON condicion;
+```
+ - __Right Join__, lo opuesto a la _Left Join_
+ 	+ Sentencia
+```sql
+ SELECt * FROM nombre_tabla_A RIGHT JOIN nombre_tabla_B ON condicion;
+```
+en todas las opciones anteriores puede cambiarse `*` por las propiedades especificas `campo_a, campo_b, ...` con las que se quiera trabajar.
+
+Y por si no fuera suficiente, todas estas consultas se pueden anidar para conseguir datos especificos de multiples tablas y consultas, como por ejemplo
+```sql
+ SELECT * FROM nombre_tabla_A WHERE campo_a= (
+ 		SELECT campo_a FROM nombre_tabla_B
+ 	);
+```
+aqui estamos haciendo una consulta condicionada a los resultados de otroa consulta. Es bueno notar que en este caso `tabla_A` y `tabla_B` pueden ser las mismas, y como ya hemos dicho bastante, `*` puede ser sustituido por propiedades especificas.
+
+Para poder aprecira toas estas maneras que tenemos de hacer consultas existen las __VISTAS__, que son visualizaciones de los resultados que obtenemos de las consultas. Para crear una vista debemos usar la sintaxis
+```sql
+  CREATE VIEW nombre_vista AS SELECT * FROM nombre_talba;
+```
+Estas vistas no se pueden modificar como las tablas, son estaticas.
 
 
+#### Caso practico
 
+Primero necesitamos agregar los productos
+```sql
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (611, 
+  	'Horno tostador',
+  	1499.00,
+  	'Horno tostador de 4 rebanadas, acero inoxidable',
+  	346);
 
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (512, 
+  	'Freidora con temporizador',
+  	1590.00,
+  	'Puede cocinar cualquier alimento, desde paaps fritas hasta verduras y mucho mas',
+  	346);
 
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (815, 
+  	'Batidora',
+  	999.00,
+  	'5 velocidades, color rojo',
+  	346);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (531, 
+  	'Fuente chocolate',
+  	789.00,
+  	'Piezas desmontables',
+  	346);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (912, 
+  	'Maquina de palomitas de maiz',
+  	830.00,
+  	'Ocupa aceite caliente',
+  	346);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (412, 
+  	'Sandwichera',
+  	459.00,
+  	'Desayuno color gris',
+  	346);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (317, 
+  	'Pantalla TV 50"',
+  	8890.00,
+  	'Tamanio n" x m"',
+  	459);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (679, 
+  	'Camara seguridad',
+  	1497.00,
+  	'Incluye soporte 24/7',
+  	459);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (923, 
+  	'Soporte TV',
+  	279.00,
+  	'Adaptable y hasta 50kg',
+  	459);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (873, 
+  	'Laptop',
+  	15499.00,
+  	'SSD 256, RAM 8GB',
+  	459);
+
+ INSERT INTO productos (id, nombre, precio, descripcion, id_tienda)
+  VALUES (682, 
+  	'Coche GPS',
+  	1299.00,
+  	'Tactil, bluethoot, no DVD',
+  	459);
+```
+y luego para ordenarlas podemos usar
+```sql
+ SELECT * FROM productos ORDER BY price ASC;
+```
 
 
 
