@@ -7,12 +7,14 @@ Repositorio para material y cursos cursados en la __Lic en Ingieneria con Sistem
 ## Materias
 
 Las materias de las que hay material en el respositorio son:
- - [x] [Ingles 1](./Ingles1/)
- - [x] [Ingles 2](./Ingles2/)
- - [x] [Desarrollo sustentable](./DesarrolloSustentable/)
- - [ ] [Taller de base de datos](./TallerDeBasesDeDatos/)
+ - [x] [Ingles 1](./Ingles1/) _Dic19_
+ - [x] [Ingles 2](./Ingles2/) _May20_
+ - [x] [Desarrollo sustentable](./DesarrolloSustentable/) _Jul20_
+ - [X] [Taller de base de datos](./TallerDeBasesDeDatos/) _Ago20_
+ - [X] [Ingles 3](./Ingles3/) _Sep20_
+ - [ ] [Algebra 2](./Algebra2/) _Oct20_
 
-> Aquellas materias con palomita ya fueron concluidas
+> Aquellas materias con palomita fueron concluidas y acreditadas.
 ## Desarrollo
 
 ### Licencia
