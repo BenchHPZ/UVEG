@@ -12,7 +12,9 @@ Las materias de las que hay material en el respositorio son:
  - [x] [Desarrollo sustentable](./DesarrolloSustentable/) _Jul20_
  - [X] [Taller de base de datos](./TallerDeBasesDeDatos/) _Ago20_
  - [X] [Ingles 3](./Ingles3/) _Sep20_
- - [ ] [Algebra 2](./Algebra2/) _Oct20_
+ - [X] [Algebra 2](./Algebra2/) _Oct20_
+ - [X] [Redes de Computadoras](./RedesDeComputadoras/) _Nov20_
+ - [ ] [Programacion Orientada a Objetos](./ProgramacionOO/) _Dic20_
 
 > Aquellas materias con palomita fueron concluidas y acreditadas.
 ## Desarrollo
