@@ -64,7 +64,7 @@ public class Rivera_Benjamin_R5_U3 {
     
 	// << ------------------------- Clases ------------------------- >>
 
-    private static class Persona{
+    abstract static class Persona{
     	/**
 		 * Clase general de persona que guarda los atributos y metodos 
 		 * que todos los integrantes de la "Escuela de Informática Río
@@ -94,12 +94,12 @@ public class Rivera_Benjamin_R5_U3 {
     		this.correoElectronico = correoElectronico;
     	}
 
-    	public void imprimir_perfil(){
+    	protected void imprimir_perfil(String str){
     		/**
     		 * Funcion que imprime en consola los datos generales que esten
     		 * almacenados de cada una de las personas.
     		 */
-    		System.out.println("---------- Integrante ----------");
+    		System.out.println("---------- " + str + " ----------");
 
     		System.out.print("ID: ");
         	System.out.println(this.id);
@@ -110,7 +110,7 @@ public class Rivera_Benjamin_R5_U3 {
         	System.out.print("Email: ");
         	System.out.println(this.correoElectronico);
 
-        	System.out.println("--------------------------------");
+        	System.out.println("------------------------------");
     	} 
 
     	protected String nombre_completo(){
@@ -155,6 +155,10 @@ public class Rivera_Benjamin_R5_U3 {
     		 */
     		alumno.guardar_calificacion(calificacion);
     	}
+
+    	public void imprimir_perfil(){
+    		super.imprimir_perfil("Profesor");
+    	}
     }
 
     public static class Alumno extends Persona{
@@ -198,6 +202,10 @@ public class Rivera_Benjamin_R5_U3 {
     		 */
     		this.calificacion = calificacion;
     	}
+
+    	public void imprimir_perfil(){
+    		super.imprimir_perfil("Alumno");
+    	}
     }
 
     public static class Tutor extends Persona{
@@ -227,6 +235,14 @@ public class Rivera_Benjamin_R5_U3 {
     		 * al tutor
     		 */
     		alumno.mostrar_calificacion();
+    	}
+
+    	public void imprimir_perfil(){
+    		/**
+    		 * Funcion para llamar correctamente a imprimir_perfil en 
+    		 * funcion de tipo de Persona
+    		 */
+    		super.imprimir_perfil("Tutor");
     	}
     }
 }

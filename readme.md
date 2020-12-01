@@ -14,12 +14,12 @@ Las materias de las que hay material en el respositorio son:
  - [X] [Ingles 3](./Ingles3/) _Sep20_
  - [X] [Algebra 2](./Algebra2/) _Oct20_
  - [X] [Redes de Computadoras](./RedesDeComputadoras/) _Nov20_
- - [ ] [Programacion Orientada a Objetos](./ProgramacionOO/) _Dic20_
+ - [X] [Programacion Orientada a Objetos](./ProgramacionOO/) _Dic20_
 
 > Aquellas materias con palomita fueron concluidas y acreditadas.
 ## Desarrollo
 
-### Licencia
+### Uso
 
 El uso del material de este repositorio, dentro de actividades de la __UVEG__, debe apegarse al _código de_ __ética institucional__ _de la universidad_. Fuera de lo anterior, todo el material de mi autoria queda bajo la licencia [![WTFPL][logoWTFPL]][licenciaWTFPL]
 
